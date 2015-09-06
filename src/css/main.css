@@ -1,0 +1,54 @@
+@import './reset.css';
+@import './fontello.css';
+
+html,
+body {
+    height: 100%;
+}
+
+body {                
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+
+a:hover {
+    color: #525252;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 100;
+}
+
+.sub-title {
+    text-transform: uppercase;
+    font-size: 19.8px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.link-item {
+    margin-top: 7px;
+}
+
+.social-set {
+    margin-top: 10px;
+}
+
+.social-item {
+    font-size: 20px;
+    display: inline-block;
+}
