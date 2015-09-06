@@ -9,17 +9,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "coding-standards": "git+ssh://git@github.com/60frames/coding-standards.git#1.0.5",
+    "coding-standards": "git+ssh://git@github.com/60frames/coding-standards.git#1.0.5"
+  },
+  "dependencies": {
     "del": "^2.0.1",
-    "gulp": "git+ssh://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp": "https://github.com/gulpjs/gulp.git#4.0",
     "gulp-cssimport": "^2.1.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-htmlmin": "^1.1.4",
     "gulp-processhtml": "^1.1.0",
     "object-assign": "^4.0.1",
-    "yargs": "^3.24.0"
-  },
-  "dependencies": {
+    "yargs": "^3.24.0",
     "colors": "^1.1.2",
     "compression": "^1.5.2",
     "express": "^4.13.3",
