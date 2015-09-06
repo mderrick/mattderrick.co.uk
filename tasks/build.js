@@ -45,18 +45,33 @@ function html() {
  * Copies static files.
  * @return {stream} File stream.
  */
-function copy() {
-    return gulp.src('src/font/**/*')
-        .pipe(gulp.dest('dist/font'));
+function copyStatic() {
+    return gulp.src([
+            'src/favicon.ico',
+            'src/robots.txt',
+            'src/apple-touch-icon.png'
+        ])
+        .pipe(gulp.dest('dist'));
 }
 
+/**
+ * Copies font files.
+ * @return {stream} File stream.
+ */
+function copyFont() {
+    return gulp.src([
+            'src/font/**/*'
+        ])
+        .pipe(gulp.dest('dist/font'));
+}
 
 build = gulp.series(
     clean,
     gulp.parallel(
         css,
         html,
-        copy
+        copyStatic,
+        copyFont
     )
 );
 
