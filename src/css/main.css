@@ -50,5 +50,10 @@ a:hover {
 
 .social-item {
     font-size: 20px;
+    margin-right: 5px;
     display: inline-block;
+}
+
+.social-item:last-child {
+    margin-right: 0;
 }
