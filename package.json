@@ -1,28 +1,23 @@
 {
-  "name": "portfolio",
+  "name": "mattderrick.co.uk",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mderrick/mattderrick.co.uk.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "coding-standards": "git+ssh://git@github.com/60frames/coding-standards.git#1.0.5"
+  "bugs": {
+    "url": "https://github.com/mderrick/mattderrick.co.uk/issues"
   },
+  "homepage": "https://github.com/mderrick/mattderrick.co.uk#readme",
   "dependencies": {
-    "del": "^2.0.1",
-    "gulp": "https://github.com/gulpjs/gulp.git#4.0",
-    "gulp-cssimport": "^2.1.1",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-htmlmin": "^1.1.4",
-    "gulp-processhtml": "^1.1.0",
-    "object-assign": "^4.0.1",
-    "yargs": "^3.24.0",
-    "colors": "^1.1.2",
-    "compression": "^1.5.2",
-    "express": "^4.13.3",
-    "ms": "^0.7.1"
+    "express": "^4.15.3"
   }
 }

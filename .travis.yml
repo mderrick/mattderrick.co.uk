@@ -1,0 +1,14 @@
+language: node_js
+sudo: required
+services:
+  - docker
+after_install:
+  - echo "ENV GIT_SHA ${TRAVIS_COMMIT}" >> Dockerfile
+after_success:
+  - docker build -t ${DOCKER_REPOSITORY}:${TRAVIS_COMMIT} .
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker tag ${DOCKER_REPOSITORY}:${TRAVIS_COMMIT} ${DOCKER_REPOSITORY}:latest
+  - docker push ${DOCKER_REPOSITORY}
+env:
+  global:
+    - DOCKER_REPOSITORY=mderrick/mattderrick.co.uk
